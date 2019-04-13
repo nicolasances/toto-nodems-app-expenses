@@ -8,11 +8,9 @@ exports.update = function(data) {
 
   return new Promise((s, f) => {
 
-    console.log(data);
-
     let upd = {};
 
-    if (data.showDemo) upd.showDemo = data.showDemo;
+    if (data.showDemo != null) upd.showDemo = data.showDemo;
 
     s({$set: upd});
 
