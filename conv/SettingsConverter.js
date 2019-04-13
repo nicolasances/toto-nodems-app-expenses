@@ -1,6 +1,5 @@
 var config = require('../config');
 var moment = require('moment-timezone');
-var getExchangeRateDlg = require('../dlg/GetExchangeRateDelegate')
 
 /**
  * Updates the settings
