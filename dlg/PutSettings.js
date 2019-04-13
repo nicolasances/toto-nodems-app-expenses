@@ -19,9 +19,6 @@ exports.do = function(req) {
 
         db.db(config.dbName).collection(config.collections.settings).updateOne({user: body.user}, update, {upsert: true}, function(err, res) {
 
-          console.log(err);
-          console.log(res);
-
           db.close();
 
           success(res);
